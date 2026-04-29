@@ -4,6 +4,7 @@ import controlengineer from '../assets/images/controlengineer.jpg';
 import embeddedproject from '../assets/images/embeddedproject.jpg';
 import autonomouscar from '../assets/images/autonomous_car.png';
 
+// @ts-ignore: SCSS module import is handled by the build configuration
 import '../assets/styles/Project.scss';
 
 function Project() {
