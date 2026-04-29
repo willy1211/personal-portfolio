@@ -18,14 +18,23 @@ function Main() {
             <a href="https://github.com/willy1211" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/wilfried-tapsoba/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
              {/* Resume PDF */}
-            <a
-              href="./resume.pdf"
+            {/* <a
+              href="./src/assets/resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="resume-btn"
             >
               View Resume
-            </a>
+            </a> */}
+            <a
+            href={process.env.PUBLIC_URL + "/resume.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Resume.pdf"
+            className="resume-btn"
+          >
+            View Resume
+          </a>
           </div>
           <h1>Wilfried Tapsoba</h1>
           <h2>Computer Engineer</h2>
