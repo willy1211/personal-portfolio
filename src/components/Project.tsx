@@ -15,16 +15,23 @@ function Project() {
                 <a href="https://lnkd.in/gqUVQukR" target="_blank" rel="noreferrer"><img src={terracare} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://lnkd.in/gqUVQukR" target="_blank" rel="noreferrer"><h2>TerraCare</h2></a>
                 <p>This project explores how satellite and other data can be used to intelligently identify medical deserts and place medical facilities strategically across Africa to improve accessibility and patient care.</p>
+                <h5>Skills: Teamwork, problem solving, public speaking, machine learning.
+                <br/>Source: Personal Project for Rosie Competition.
+                <br/><a href="https://lnkd.in/gqUVQukR" target="_blank" rel="noreferrer">View Presentation</a></h5>
             </div>
             <div className="project">
                 <img src={embeddedproject} className="zoom" alt="thumbnail" width="100%"/>
                 <a href="https://linkedin.com/in/wilfried-tapsoba" target="_blank" rel="noreferrer"><h2>Embedded Systems Project</h2></a>
                 <p>Design and create a PCB for an alarm clock with speakers and wireless capabilities.</p>
+                <h4>Skills: Embedded Systems, Soldering, Debugging, Troubleshooting, Programming (C)</h4>
+                <h5>Source: Class Project. </h5>
             </div>
             <div className="project">
                 <img src={autonomouscar} className="zoom" alt="thumbnail" width="100%"/>
                 <a href="https://linkedin.com/in/wilfried-tapsoba" target="_blank" rel="noreferrer"><h2>Autonomous Car with Traffic Light System</h2></a>
                 <p>This project assesses the safety of self-driving cars with a miniature autonomous car with a traffic light system. Selected as 2nd best research project among other 34 projects at the student showcase at Madison College.</p>
+                <h5>Skills: Arduino, Assembly, Problem solving,Debugging, Troubleshooting.
+                <br/>Source: Capstone Project. </h5>
             </div>
             {/* <div className="project">
                 <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
