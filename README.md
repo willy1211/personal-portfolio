@@ -4,20 +4,12 @@
 
 ## What is this?
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+This portfolio is designed to showcase my projects, career history, skill sets, and more.
 
-View the [Demo](https://wilfriedtapsoba.github.io/react-portfolio/).
-
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
-
-![screenshot](./src/assets//images/screenshot.png)
+View [Site](https://wilfriedtapsoba.github.io/react-portfolio/).
 
 ## Features
 
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
 ✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
 
 ## Quick Setup
