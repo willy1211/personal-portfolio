@@ -27,14 +27,13 @@ function Main() {
               View Resume
             </a> */}
             <a
-            href={process.env.PUBLIC_URL + "/resume.pdf"}
-            target="_blank"
-            rel="noopener noreferrer"
-            download="Resume.pdf"
-            className="resume-btn"
-          >
-            View Resume
-          </a>
+              href={process.env.PUBLIC_URL + "/resume.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-btn"
+            >
+              View Resume
+            </a>
           </div>
           <h1>Wilfried Tapsoba</h1>
           <h2>Computer Engineer</h2>
