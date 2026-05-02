@@ -1,6 +1,5 @@
 import React from "react";
 import terracare from '../assets/images/terracare.png';
-import controlengineer from '../assets/images/controlengineer.jpg';
 import embeddedproject from '../assets/images/embeddedproject.jpg';
 import autonomouscar from '../assets/images/autonomous_car.png';
 
