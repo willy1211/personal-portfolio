@@ -1,7 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import school from '../assets/images/school.png';
 import 'react-vertical-timeline-component/style.min.css';
-import '../assets/styles/Timeline.scss'
+import '../assets/styles/Timeline.scss';
 
 function Timeline() {
   return (
@@ -13,11 +13,12 @@ function Timeline() {
             className="vertical-timeline-element--work"
             date="2023 - 2026"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<img src={school}  alt="Headshot" style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "50%"
+            icon={<img src={school}  alt="School" style={{
+              width: "90%",
+              height: "90%",
+              objectFit: "contain",
+              borderRadius: "50%",
+              imageRendering: 'crisp-edges'
             }}/>}
           >
             <h3 className="vertical-timeline-element-title">Bachelor of Science in Computer Engineering, Milwaukee School of Engineering</h3>
@@ -32,12 +33,12 @@ function Timeline() {
             contentArrowStyle={{ borderRight: '5px solid  white' }}
             date="2021 - 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            // icon={<FontAwesomeIcon icon={faBriefcase} />}
-            icon={<img src={school}  alt="Headshot" style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              borderRadius: "50%"
+            icon={<img src={school}  alt="School" style={{
+              width: "90%",
+              height: "90%",
+              objectFit: "contain",
+              borderRadius: "50%",
+              imageRendering: 'crisp-edges'
             }}/>}
           >
             <h3 className="vertical-timeline-element-title">Associate of Science in Electrical Engineering, Madison College</h3>

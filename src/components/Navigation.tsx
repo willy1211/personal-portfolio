@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -22,6 +23,8 @@ const navItems = [['Experience', 'expertise'], ['Education', 'history'], ['Proje
 function Navigation({parentToChild, modeChange}: any) {
 
   const {mode} = parentToChild;
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -47,15 +50,33 @@ function Navigation({parentToChild, modeChange}: any) {
   }, []);
 
   const scrollToSection = (section: string) => {
-    console.log(section)
-    const experienceElement = document.getElementById(section);
-    if (experienceElement) {
-      experienceElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', experienceElement);  // Debugging: Ensure the element is found
-    } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+    const target = document.getElementById(section);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+      setMobileOpen(false);
+      return;
     }
+
+    if (location.pathname !== '/') {
+      navigate(`/#${section}`);
+      setMobileOpen(false);
+      return;
+    }
+
+    console.error(`Section id "${section}" not found on current page.`);
   };
+
+  useEffect(() => {
+    if (!location.hash) {
+      return;
+    }
+
+    const sectionId = location.hash.replace('#', '');
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
 
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>

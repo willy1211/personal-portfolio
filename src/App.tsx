@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Routes, Route } from 'react-router-dom';
 import {
   Main,
   Education,
@@ -9,16 +10,26 @@ import {
   Footer,
 } from "./components";
 import FadeIn from './components/FadeIn';
-import './index.scss';
+import ProjectPage from './pages/ProjectPage';
+
+const Home = () => (
+  <>
+    <Main />
+    <Experience />
+    <Education />
+    <Project />
+    <Contact />
+  </>
+);
 
 function App() {
-    const [mode, setMode] = useState<string>('dark');
+    const [mode, setMode] = useState<string>('light');
 
     const handleModeChange = () => {
-        if (mode === 'dark') {
-            setMode('light');
-        } else {
+        if (mode === 'light') {
             setMode('dark');
+        } else {
+            setMode('light');
         }
     }
 
@@ -30,11 +41,10 @@ function App() {
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
-            <Main/>
-            <Experience/>
-            <Education/>
-            <Project/>
-            <Contact/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects/:projectId" element={<ProjectPage />} />
+          </Routes>
         </FadeIn>
         <Footer />
     </div>

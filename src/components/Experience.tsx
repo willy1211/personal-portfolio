@@ -40,60 +40,89 @@ function Experience() {
         <div className="skills-container">
             <h1>Experience</h1>
             <div className="skills-grid">
-                <div className="skill">
-                    {/* <FontAwesomeIcon icon={faReact} size="3x"/> */}
-                    {/* <img src={controlengineer} alt="Control Engineer" /> */}
-                    <h3>Control Engineer - Co-Op</h3>
-                    <p> 
-                        <h4>Husco, Waukhesa, WI <br/> January 2025- August 2025</h4> 
-                        <li>Conducted a thermal paste test to evaluate the effectiveness of the use of thermal paste in the assembly process of the controller. </li>
-                        <li>Performed different tests on the microcontroller to test features on analog input, digital input, multi-function inputs. </li>
-                        <li>Developed MATLAB code to enhance Huslink, a software used for programming HUSCO controllers, and wrote a comprehensive user guide to improve usability and adoption. </li>
-                        <li>Embedded firmware development on advanced fluid-power controls for off-highway vehicles. </li>
-
-                    </p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Skills:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                <div className="skill-card">
+                    <div className="skill-card-inner">
+                        <div className="skill-card-front">
+                            <h3>Control Engineer - Co-Op</h3>
+                            <div className="skill-card-meta">
+                                <span>Husco, Waukhesa, WI</span>
+                                <span>January 2025 - August 2025</span>
+                            </div>
+                            <div className="skill-card-skills">
+                                <p className="skill-card-label">Skills acquired</p>
+                                <div className="skill-card-chip-row">
+                                    {labelsFirst.map((label, index) => (
+                                        <Chip key={index} className='chip' label={label} />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="skill-card-back">
+                            <h4>What I did</h4>
+                            <ul>
+                                <li>Conducted a thermal paste test to evaluate assembly effectiveness for Husco controllers.</li>
+                                <li>Tested analog, digital, and multi-function inputs on the controller microprocessor.</li>
+                                <li>Developed MATLAB code to enhance Huslink, and created a user guide to improve adoption.</li>
+                                <li>Worked on embedded firmware for advanced fluid-power controls on off-highway vehicles.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div className="skill">
-                    {/* <FontAwesomeIcon icon={faDocker} size="3x"/> */}
-                    <h3>STEM Lab Instructor</h3>
-                    <p> 
-                        <h4>Milwaukee School of Engineering, Milwaukee, WI <br/> September 2023- May 2026</h4> 
-                        <li>Support evening programs as an instructor and mentor for coding clubs and STEM initiatives. </li>
-                        <li>Lead STEM projects in electronics, circuit design, 3D modeling, programming, engineering. </li>
-                        <li>Plan and teach STEM related projects to youth in Milwaukee; Support youth with an interest in STEM . </li>
-                       
-                    </p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Skills:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                <div className="skill-card">
+                    <div className="skill-card-inner">
+                        <div className="skill-card-front">
+                            <h3>STEM Lab Instructor</h3>
+                            <div className="skill-card-meta">
+                                <span>Milwaukee School of Engineering, Milwaukee, WI</span>
+                                <span>September 2023 - May 2026</span>
+                            </div>
+                            <div className="skill-card-skills">
+                                <p className="skill-card-label">Skills acquired</p>
+                                <div className="skill-card-chip-row">
+                                    {labelsSecond.map((label, index) => (
+                                        <Chip key={index} className='chip' label={label} />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="skill-card-back">
+                            <h4>What I did</h4>
+                            <ul>
+                                <li>Supported evening programs as an instructor and mentor for coding clubs and STEM initiatives.</li>
+                                <li>Led projects in electronics, circuit design, 3D modeling, programming, and engineering.</li>
+                                <li>Planned and taught STEM activities to youth while supporting their interest in technology.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div className="skill">
-                    {/* <FontAwesomeIcon icon={faPython} size="3x"/> */}
-                    <h3>STEM Instructional Support Technician</h3>
-                    <p> 
-                        <h4>Madison College, Madison, WI <br/> August 2021- May 2023</h4>
-                        <li>Assisted in the design and development of items on SOLIDWORKS and glowforge laser to promote access in STEM. </li>
-                        <li>Repaired and maintained equipment, did inventory and brainstorm projects ideas for the center. </li>
-                        <li>Provided technical support to students and staff in the use of lab equipment and software.</li>
-                        <li>Revised the website, provide suggestions with new one I programmed using javascript and css. </li>
-                    </p>
-                    
-                    <div className="flex-chips">
-                        <span className="chip-title">Skills:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
+                <div className="skill-card">
+                    <div className="skill-card-inner">
+                        <div className="skill-card-front">
+                            <h3>STEM Instructional Support Technician</h3>
+                            <div className="skill-card-meta">
+                                <span>Madison College, Madison, WI</span>
+                                <span>August 2021 - May 2023</span>
+                            </div>
+                            <div className="skill-card-skills">
+                                <p className="skill-card-label">Skills acquired</p>
+                                <div className="skill-card-chip-row">
+                                    {labelsThird.map((label, index) => (
+                                        <Chip key={index} className='chip' label={label} />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="skill-card-back">
+                            <h4>What I did</h4>
+                            <ul>
+                                <li>Designed items in SOLIDWORKS and Glowforge to improve access to STEM resources.</li>
+                                <li>Maintained lab equipment, managed inventory, and brainstormed project ideas.</li>
+                                <li>Provided technical support for software and lab tools to students and staff.</li>
+                                <li>Improved the website and contributed front-end updates using JavaScript and CSS.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
