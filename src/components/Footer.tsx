@@ -11,7 +11,8 @@ function Footer() {
         <a href="https://github.com/willy1211" target="_blank" rel="noreferrer"><GitHubIcon/></a>
         <a href="https://www.linkedin.com/in/wilfried-tapsoba/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
       </div>
-      <p>A portfolio designed & built by <a href="https://github.com/willy1211/personal-portfolio" target="_blank" rel="noreferrer">Wilfried Tapsoba</a> with 💜</p>
+      <p>A portfolio designed & built by <a href="https://github.com/willy1211/personal-portfolio" target="_blank" rel="noreferrer">Wilfried Tapsoba</a></p>
+      {/* with 💜 */}
     </footer>
   );
 }

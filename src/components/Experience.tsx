@@ -63,7 +63,7 @@ function Experience() {
                                 <li>Conducted a thermal paste test to evaluate assembly effectiveness for Husco controllers.</li>
                                 <li>Tested analog, digital, and multi-function inputs on the controller microprocessor.</li>
                                 <li>Developed MATLAB code to enhance Huslink, and created a user guide to improve adoption.</li>
-                                <li>Worked on embedded firmware for advanced fluid-power controls on off-highway vehicles.</li>
+                                {/* <li>Worked on embedded firmware for advanced fluid-power controls on off-highway vehicles.</li> */}
                             </ul>
                         </div>
                     </div>

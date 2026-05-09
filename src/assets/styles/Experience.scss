@@ -47,12 +47,11 @@
     min-height: 440px;
     padding: 32px;
     border-radius: 18px;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border: 2px solid #000;
 }
 
 .skill-card-front {

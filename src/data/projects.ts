@@ -29,10 +29,10 @@ export const projects: ProjectData[] = [
       'Built a continental-scale decision system that discovers underserved settlements and optimizes healthcare facility placement to reach the most vulnerable communities.',
     image: terracare,
     tags: ['Geospatial', 'Optimization', 'Healthcare', 'GPU', 'Clustering', 'Spatial Data'],
-    actionLabel: 'View Case Study',
-    actionUrl: 'https://www.example.com',
+    actionLabel: 'View Project Presentation',
+    actionUrl: 'https://www.youtube.com/watch?v=hszexzVk4YI',
     motivation:
-      'This project is personal. My mother is a midwife, and I grew up seeing how women in labor turned to the closest help available. TerraCare was built to address the reality that healthcare access in Africa is a placement problem, not just a funding problem.',
+      'This project is personal. I worked in a team of 3. My teammate\'s mother is a midwife, and I grew up seeing how women in labor turned to the closest help available. TerraCare was built to address the reality that healthcare access in Africa is a placement problem, not just a funding problem.',
     solution:
       'TerraCare combines 428 million building footprints, health facility locations, and populated place anchors to discover underserved settlements and optimize facility deployment across Africa.',
     systemOverview: [
@@ -89,8 +89,8 @@ export const projects: ProjectData[] = [
       'Designed and built a PCB-based alarm clock with wireless features and embedded firmware for real-time operation.',
     image: embeddedproject,
     tags: ['Embedded', 'PCB', 'Firmware', 'C Programming', 'Hardware'],
-    actionLabel: 'View LinkedIn',
-    actionUrl: 'https://linkedin.com/in/wilfried-tapsoba',
+    actionLabel: 'View Demo Video (Comming Soon)',
+    actionUrl: '',
     motivation:
       'I wanted to create a product-level embedded system that combined hardware, firmware, and user interaction in a single project.',
     solution:
@@ -132,8 +132,8 @@ export const projects: ProjectData[] = [
       'Built a miniature autonomous vehicle and traffic signal environment to evaluate decision-making and safety behavior.',
     image: autonomouscar,
     tags: ['Robotics', 'Sensors', 'Control Systems', 'Arduino', 'Safety'],
-    actionLabel: 'View LinkedIn',
-    actionUrl: 'https://linkedin.com/in/wilfried-tapsoba',
+    actionLabel: 'View Project Video (Comming Soon)',
+    actionUrl: '',
     motivation:
       'I wanted to explore how an autonomous vehicle can safely react to traffic lights in a controlled research prototype.',
     solution:
