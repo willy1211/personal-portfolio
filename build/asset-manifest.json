@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.98f5b5af.css",
+    "main.css": "/static/css/main.12fec497.css",
     "main.js": "/static/js/main.22b4d49b.js",
     "static/js/453.1ebc3e3a.chunk.js": "/static/js/453.1ebc3e3a.chunk.js",
     "static/media/autonomous_car.png": "/static/media/autonomous_car.dcb8f1535f2d7a37f913.png",
@@ -9,12 +9,12 @@
     "static/media/embeddedproject.jpg": "/static/media/embeddedproject.c1493ca6383f3adf0876.jpg",
     "static/media/hero_img.jpg": "/static/media/hero_img.f4fc139ec26d0855dd23.jpg",
     "index.html": "/index.html",
-    "main.98f5b5af.css.map": "/static/css/main.98f5b5af.css.map",
+    "main.12fec497.css.map": "/static/css/main.12fec497.css.map",
     "main.22b4d49b.js.map": "/static/js/main.22b4d49b.js.map",
     "453.1ebc3e3a.chunk.js.map": "/static/js/453.1ebc3e3a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98f5b5af.css",
+    "static/css/main.12fec497.css",
     "static/js/main.22b4d49b.js"
   ]
 }
