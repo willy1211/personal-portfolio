@@ -1,20 +1,11 @@
-import React from 'react';
+// import React from 'react';
+import { useParams, Link } from 'react-router-dom';
 import { projectLookup } from '../data/projects';
 import ProjectDetail from '../components/ProjectDetail';
-// import { Link } from '@mui/material';
-import { Link } from 'react-router-dom';
 
-function getProjectIdFromPath(): string | undefined {
-  if (typeof window === 'undefined') {
-    return undefined;
-  }
-
-  const match = window.location.pathname.match(/\/project\/([^/]+)/);
-  return match ? decodeURIComponent(match[1]) : undefined;
-}
 
 export default function ProjectPage() {
-  const projectId = getProjectIdFromPath();
+  const { projectId } = useParams();
   const project = projectId ? projectLookup[projectId] : undefined;
 
   if (!project) {
