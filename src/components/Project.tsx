@@ -1,5 +1,4 @@
-﻿import React from 'react';
-import { projects } from '../data/projects';
+﻿import { projects } from '../data/projects';
 import ProjectCard from './ProjectCard';
 // @ts-ignore: SCSS module import is handled by the build configuration
 import '../assets/styles/Project.scss';
